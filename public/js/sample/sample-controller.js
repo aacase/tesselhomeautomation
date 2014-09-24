@@ -14,7 +14,7 @@ angular.module('MakerHome')
     }, function(error) {
       console.log('error', error);
     });
-  };
+  };sub
 
   $scope.signUp = function() {
     $scope.auth.$createUser($scope.email, $scope.password

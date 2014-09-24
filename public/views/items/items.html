@@ -1,70 +1,52 @@
 <div ng-controller="ItemsController">
-        <h1>Your Connected Items</h1>
-
-       <!--  <fieldset>
-           <legend>Add Item</legend>
-           <input type="text" ng-model="name" placeholder="Name" >
-           <input type="number" ng-model="location" placeholder="Location" >
-           <input type="text" ng-model="title" placeholder="Title" >
-           <button class= 'btn btn-info' type="button" ng-click="addItem()">Add Item</button>
-        </fieldset> -->
+  <h1>Your Connected Items</h1>
+  <form ng-submit="addItem(name,location,title)">
+    <input ng-model="name" />
+    <input ng-model="location" />
+    <input ng-model="title" />
+    <button type="submit">add item</button>
+  </form>
+  <table class= 'table' border="1" cellpadding="10">
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Location
+        </th>
+        <th>
+          Title
+        </th>
+        <th>
+          Current State
+        </th>
+      </tr>
+    </thead>
+    <body>
+      <tr ng-repeat="item in items">
+        <td>
+          {{ item.name }}
+        </td>
+        <td>
+          {{ item.location }}
+        </td>
+        <td>
+          {{ item.title }}
+        </td>
+        <td>
           
-      <form ng-submit="addItem(name,location,title)">
-      <input ng-model="name" />
-      <input ng-model="location" />
-      <input ng-model="title" />
-      <button type="submit">add item</button>
-    </form>
-
-
-
-        <table class= 'table' border="1" cellpadding="10">
-           <thead>
-             <tr>
-               <th>
-                  Name
-               </th>
-               <th>
-                  Location
-              </th>
-              <th>
-                  Title
-              </th>
-              <th>
-				Current State
-              </th>
-            </tr>
-          </thead>
-          <body>
-             <tr ng-repeat="item in items">
-               <td>
-                 {{ item.name }}
-              </td>
-              <td>
-                 {{ item.location }}
-              </td>
-              <td>
-                 {{ item.title }}
-              </td>
-              <td>
-                 <!-- <button class= 'btn btn-info' type="button" ng-click="removePerson($index)">Remove Person</button> -->
-              <!--   <div ng-if "user==nil"> -->
-                 <div class="onoffswitch">
-
-                    <!--  <input ng-model='state'ng-change="toggleSwitch" type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
-                     <label class="onoffswitch-label" for="myonoffswitch">
-                         <span class="onoffswitch-inner"></span>
-                         <span class="onoffswitch-switch"></span>
-                     </label> -->
-
-                     <input type="checkbox" ng-model="item.state" ng-true-value="on" ng-false-value="off" ng-change="saveChange(item)" /> 
-                 </div>
-             <!-- </div> -->
-              {{item.state}}
-
-              </td>
-            </tr>
-          </body>
-        </table>
-
-      </div>
+          <div class="onoffswitch">
+            <input type="checkbox" class="onoffswitch-checkbox" id="{{item.name}}" name="{{item.name}}" ng-model="item.state" ng-true-value="on" ng-false-value="off" ng-change="saveChange(item)"/>
+            <label class="onoffswitch-label" for="{{item.name}}">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch"></span>
+            </label>
+          </div>
+          <!-- </div> -->
+          
+        </td>
+      </tr>
+    </body>
+  </table>
+</div>

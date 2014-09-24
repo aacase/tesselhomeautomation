@@ -15,8 +15,8 @@ Swag2
 /* ==========================================================================
 Swag3
 ========================================================================== */
-.swag3 { background: url('http://placehold.it/1700x1000') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 150px 0; }
-.swag3 h1 { color: #fff; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
+.swag3 { background: url('http://i.imgur.com/ahpBZBJ.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 150px 0; }
+.swag3 h1 { color:#ecf0f1; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
 .swag3 h1 span { display: block; font-size: 25px; margin-top: 20px; }
 
 /* ==========================================================================
