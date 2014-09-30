@@ -2,7 +2,7 @@ angular.module('MakerHome')
   .controller('ItemsController', ['$scope', '$firebase', function ($scope, $firebase) {
 
     var ref = new Firebase("https://makerhome.firebaseio.com/items");
-    childRef= ref.child('test');
+    
 
     var sync = $firebase(ref);
   
@@ -11,7 +11,7 @@ angular.module('MakerHome')
 
     $scope.addItem = function(text, text2, text3) {
       
-      $scope.items.$add({name: text, location: text2, title: text3, state: "off"});
+      $scope.items.$add({name: text, location: text2, title: text3, state: "false"});
     }
 
 

@@ -1,12 +1,16 @@
-<div ng-controller="ItemsController">
+
+
+<header>
+  <div class='container' ng-controller="ItemsController">
   <h1>Your Connected Items</h1>
-  <form ng-submit="addItem(name,location,title)">
+  <button><a href="/#home">HOME</a></button>
+  <!-- <form ng-submit="addItem(name,location,title)">
     <input ng-model="name" />
     <input ng-model="location" />
     <input ng-model="title" />
     <button type="submit">add item</button>
-  </form>
-  <table class= 'table' border="1" cellpadding="10">
+  </form> -->
+  <table class= 'table itemTable' border="1" cellpadding="10">
     <thead>
       <tr>
         <th>
@@ -37,7 +41,7 @@
         <td>
           
           <div class="onoffswitch">
-            <input type="checkbox" class="onoffswitch-checkbox" id="{{item.name}}" name="{{item.name}}" ng-model="item.state" ng-true-value="on" ng-false-value="off" ng-change="saveChange(item)"/>
+            <input type="checkbox" class="onoffswitch-checkbox" id="{{item.name}}" name="{{item.name}}" ng-model="item.state" ng-true-value= true ng-false-value= false ng-change="saveChange(item)"/>
             <label class="onoffswitch-label" for="{{item.name}}">
               <span class="onoffswitch-inner"></span>
               <span class="onoffswitch-switch"></span>
@@ -50,3 +54,4 @@
     </body>
   </table>
 </div>
+</header>

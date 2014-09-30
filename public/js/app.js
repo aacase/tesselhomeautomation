@@ -8,8 +8,5 @@ angular.module('MakerHome', ['ngResource', 'ngRoute', 'ui.bootstrap', 'ui.date',
       .when('/items', {
         templateUrl: 'views/items/items.html', 
         controller: 'ItemsController'})
-      .when('/sample', {
-        templateUrl: 'views/sample/sample.html', 
-        controller: 'ItemsController'})
       .otherwise({redirectTo: '/'});
   }]);
