@@ -1,0 +1,44 @@
+/* ==========================================================================
+Swag
+========================================================================== */
+.swag { background: url('http://i.imgur.com/UiSljD6.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 150px 0; }
+.swag h1 { color: #fff; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
+.swag h1 span { display: block; font-size: 25px; margin-top: 20px; }
+
+/* ==========================================================================
+Swag2
+========================================================================== */
+.swag2 { background: url('http://i.imgur.com/Ey2pE5f.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 150px 0; }
+.swag2 h1 { color: #fff; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
+.swag2 h1 span { display: block; font-size: 25px; margin-top: 20px; }
+
+/* ==========================================================================
+Swag3
+========================================================================== */
+.swag3 { background: url('http://i.imgur.com/ahpBZBJ.jpg') no-repeat center center;  }
+.swag3 h1 { color:#2c3e50; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
+.swag3 h1 span { display: block; font-size: 25px; margin-top: 20px; }
+.swag3 p {font-size: 25px; color: #fff; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;}
+
+/* ==========================================================================
+Swag4
+========================================================================== */
+.swag4 { background: url('http://placehold.it/1600x900') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 150px 0; }
+.swag4 h1 { color: #fff; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
+.swag4 h1 span { display: block; font-size: 25px; margin-top: 20px; }
+
+/* ==========================================================================
+Swag5
+========================================================================== */
+.swag5 { background: url('http://i.imgur.com/sfQEl6W.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 150px 0; }
+.swag5 h1 { color: #fff; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
+.swag5 h1 span { display: block; font-size: 25px; margin-top: 20px; }
+
+/* ==========================================================================
+/* ==========================================================================
+Swag6
+========================================================================== */
+.swag6 { background: url('http://i.imgur.com/zTr8pmg.png') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; padding: 150px 0; }
+.swag6 h1 { color: #fff; font-size: 40px; text-transform: uppercase; letter-spacing: 5px; }
+.swag6 h1 span { display: block; font-size: 25px; margin-top: 20px; }
+

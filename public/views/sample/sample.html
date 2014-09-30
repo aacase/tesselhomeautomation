@@ -1,0 +1,31 @@
+<div ng-controller="SampleCtrl">
+
+
+
+<ul>
+      <li ng-repeat="message in messages">
+        <!-- exit a message -->
+        <input ng-model="message.text" ng-change="messages.$save(message)" />
+        <!-- delete message -->
+        <button ng-click="messages.$remove(message)">X</button>
+      </li>
+    </ul>
+    <!-- push a new message into the array -->
+    <form ng-submit="addMessage(newMessageText)">
+      <input ng-model="newMessageText" />
+      <button type="submit">add message</button>
+    </form>
+
+
+     <form ng-hide="auth.user">
+      <input type="email" ng-model="email">
+      <input type="password" ng-model="password">
+      <a href="#" ng-click="signIn()">Sign In</a>
+      <a href="#" ng-click="signUp()">Sign Up</a>
+    </form>
+    <div ng-show="auth.user">
+         <p>Hello, {{auth.user.email}}</p>
+         <button ng-click="auth.$logout()">Logout</button>
+    </div>
+
+  </div>
