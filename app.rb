@@ -20,7 +20,7 @@ class MakerHome < Sinatra::Application
   #     require 'jdbc/postgres'
   #     Jdbc::Postgres.load_driver
   #   end
-  # end
+  end
 end
 
 require_relative 'helpers/init'
